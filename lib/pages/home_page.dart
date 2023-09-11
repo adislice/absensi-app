@@ -99,13 +99,12 @@ class _HomePageState extends State<HomePage> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(
-                          "Welcome back",
+                          "Selamat datang kembali",
                           style:
                               Theme.of(context).textTheme.bodyLarge?.copyWith(
                                     color: Theme.of(context)
                                         .colorScheme
-                                        .onPrimary
-                                        .withAlpha(220),
+                                        .onPrimary,
                                     fontWeight: FontWeight.normal,
                                     fontSize: 18.0,
                                   ),
@@ -125,12 +124,12 @@ class _HomePageState extends State<HomePage> {
                               )
                             : Shimmer.fromColors(
                                 period: Duration(milliseconds: 800),
-                                baseColor: Colors.grey.shade300,
-                                highlightColor: Colors.grey.shade50,
+                                baseColor: Colors.grey.shade300.withAlpha(100),
+                                highlightColor: Colors.grey.shade100,
                                 child: Container(
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(4.0),
-                                    color: Colors.white.withAlpha(200),
+                                    color: Colors.white.withAlpha(100),
                                   ),
                                   width: 200.0,
                                   height: 30.0,
@@ -282,7 +281,7 @@ class InformasiCard extends StatelessWidget {
       elevation: 0,
       shape: RoundedRectangleBorder(
         side: BorderSide(
-          color: Theme.of(context).colorScheme.outline.withAlpha(50),
+          color: Colors.grey.withAlpha(50),
         ),
         borderRadius: const BorderRadius.all(Radius.circular(12)),
       ),

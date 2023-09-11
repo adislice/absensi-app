@@ -25,14 +25,14 @@ class _MyAppState extends State<MyApp> {
       routerConfig: router,
       theme: ThemeData(
         // useMaterial3: true,
-        // colorScheme: ColorScheme.fromSwatch(
-        //   primarySwatch: Colors.blue,
-        //   brightness: Brightness.light,
-        // ),
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.blue,
+        colorScheme: ColorScheme.fromSwatch(
+          primarySwatch: Colors.blue,
           brightness: Brightness.light,
         ),
+        // colorScheme: ColorScheme.fromSeed(
+        //   seedColor: Colors.blue,
+        //   brightness: Brightness.light,
+        // ),
         textTheme: appTextTheme,
         
       ),

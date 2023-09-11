@@ -4,8 +4,8 @@ import 'package:collection/collection.dart' show IterableExtension;
 
 List<BottomNavigationBarItem> navItems = [
   BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: 'Home'),
-  BottomNavigationBarItem(icon: Icon(Icons.date_range), label: 'Presensi'),
-  BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
+  BottomNavigationBarItem(icon: Icon(Icons.date_range), label: 'Kehadiran'),
+  BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profil'),
 ];
 
 class DashboardBasePage extends StatefulWidget {
